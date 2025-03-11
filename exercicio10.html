@@ -1,0 +1,20 @@
+<script>
+let saldo = prompt("Qual seu saldo?")
+saldo = parseFloat(saldo) //PARSEFLOAD!!! usar para converter!!!!
+
+if (saldo <= 200) {
+    alert("Sem saldo para você")
+} else if (saldo >= 201 && saldo <= 400) {
+    let conta1 = saldo / 100
+    let conta2 = conta1 * 20
+    alert(`Seu saldo é ${conta2}`)
+} else if (saldo >= 401 && saldo <= 600) {
+    let conta5 = saldo / 100
+    let conta6 = conta5 * 30
+    alert(`Seu saldo é ${conta6}`)
+} else if (saldo >= 601) {
+    let conta7 = saldo / 100
+    let conta8 = conta7 * 40
+    alert(`Seu saldo é ${conta8}`)
+}
+</script>  

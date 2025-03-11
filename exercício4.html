@@ -1,0 +1,16 @@
+<script>
+//Mp = [(N1 x P1) + (N2 x P2) + (N3 x P3) + ... (Nx x Px)] ÷ (P1 + P2 + P3 + ... Px
+let nota1 = prompt("Sua Primeira nota")
+let nota2 = prompt("Sua Segunda nota")
+let nota3 = prompt("Sua Terceira nota")
+let Mp1 = parseFloat(nota1) * 4
+let Mp2 = parseFloat(nota2) * 3
+let Mp3 = parseFloat(nota3) * 3
+let nt = parseFloat(Mp1) + parseFloat(Mp2) + parseFloat(Mp3)
+let pd = parseFloat(nt) / 10
+if (pd >= 7){
+    alert("Você passou")
+}else if (pd > 5 && pd < 7){
+    alert("Recuperação")
+}else alert("Reprovado noob")
+</script>
