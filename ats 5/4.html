@@ -1,0 +1,11 @@
+<script>
+    let sexo = prompt("Qual seu sexo (1 para masculino e 2 para feminino)?");
+    let altura = parseFloat(prompt("Qual é sua altura? , colocar em CM e com ponto em vez de vírgula"));
+    if (sexo === "1") {
+        alert(`Seu peso ideal seria ${(72.7 * altura) - 58}`);
+    } else if (sexo === "2") {
+        alert(`Seu peso ideal seria ${(62.1 * altura) - 44.7}`);
+    } else {
+        alert("favor inserir 1 ou 2");
+    }   
+    </script>

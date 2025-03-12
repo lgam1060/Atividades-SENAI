@@ -1,0 +1,16 @@
+<script>
+    let salário = parseFloat(prompt("qual seu salário atual?"));
+    if (salário <= 2800){
+        alert(`Seu novo salário será de R$ ${salário * 1.2}`);
+    }
+    else if (salário > 2800 && salário <= 7000){
+        alert(`Seu novo salário será de R$ ${salário * 1.15}`)
+    }
+    else if (salário > 7000 && salário <= 15000){
+        alert(`Seu novo salário será de R$ ${salário * 1.10}`)
+    }
+    else if (salário > 15000){
+        alert(`Seu novo salário será de R$ ${salário * 1.05}`)
+    }
+
+</script>

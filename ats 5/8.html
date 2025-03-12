@@ -1,0 +1,17 @@
+<script>
+    let hora = parseFloat(prompt("Quantas horas você trabalha por mês?"));
+    let valorhora = parseFloat(prompt("Quanto você ganha por cada hora?"));
+    let bruto = hora * valorhora;
+    let insss = bruto * 0.08;
+    let insss2 = bruto - insss;
+    
+    if (bruto <= 900) {
+        alert(`Seu salário líquido vai ser R$ ${insss2}`);
+    } else if (bruto > 900 && bruto <= 1500) {
+        alert(`Seu salário líquido vai ser R$ ${insss2 * 0.95} Os descontos foram de 5% pelo IR, e ${insss} pelo inss`);
+    } else if (bruto > 1500 && bruto <= 2500) {
+        alert(`Seu salário líquido vai ser R$ ${insss2 * 0.90} Os descontos foram de 10% pelo IR, e ${insss} pelo inss`);
+    } else if (bruto > 2500) {
+        alert(`Seu salário líquido vai ser R$ ${insss2 * 0.80} Os descontos foram de 20% pelo IR, e ${insss} pelo inss`);
+    }
+    </script>

@@ -1,0 +1,19 @@
+<script>
+    let combustivel = prompt("Quer álcool ou gasolina? (escreva como está aqui)");
+    let litros = parseFloat(prompt("Quantos litros?"));
+    if (combustivel === "gasolina") {
+        if (litros <= 20) {
+            alert(`Valor a ser pago vai ter desconto de 3% por L`);
+        } else {
+            alert(`Valor a ser pago vai ter desconto de 5% por L`);
+        }
+    } else if (combustivel === "alcool") {
+        if (litros <= 20) {
+            alert(`Valor a ser pago vai ter desconto de 4% por L`);
+        } else {
+            alert(`Valor a ser pago vai ter desconto de 6% por L`);
+        }
+    } else {
+        alert("Não existe meu deus");
+    }
+    </script>
