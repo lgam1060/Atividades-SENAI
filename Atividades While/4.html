@@ -1,0 +1,23 @@
+<script>
+    let comida = parseInt(prompt('Qual o código da comida?'));
+    let valor_final = 0;
+    while (comida > 0) {
+          if (comida == 100){
+             valor_final += 1.70;
+          } else if (comida == 101){
+             valor_final += 2.30;
+          } else if (comida == 102){
+             valor_final += 2.60;
+          } else if (comida == 103){
+             valor_final += 2.40;
+          } else if (comida == 104){
+             valor_final += 2.50;
+          } else if (comida == 105){
+             valor_final += 1.00;
+          } else {
+             alert('inválido');
+          }
+          comida = parseInt(prompt('Qual o código da comida?'));
+    }
+    alert(`O valor final é: ${valor_final} R$`);
+ </script>
