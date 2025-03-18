@@ -1,0 +1,15 @@
+<script>
+    let numero = parseInt(prompt('Digite um número:'));
+    let qnt = 0;
+    let soma = 0;
+    while (numero > 0) {
+        let numeroInvertido = parseInt(numero.toString().split('').reverse().join(''));
+        soma += numeroInvertido;  
+        qnt++;
+        numero = parseInt(prompt('Digite um número:'));
+    }
+    let soma1 = soma * 2;
+    let soma2 = soma * soma;
+    let soma3 = soma * soma * soma;
+    alert(`Vezes 2 = ${soma1}, Quadrado = ${soma2}, Cubo = ${soma3}`);        
+</script>
