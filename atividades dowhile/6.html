@@ -1,0 +1,12 @@
+<script>
+let tentativas = 0
+let minimo = 1
+let maximo = 12
+let numero = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+let chutar = 0
+do {
+    chutar = parseInt(prompt("Diga um número entre 1 e 12"))
+    tentativas++
+} while (chutar != numero)
+alert(`Eba! Você acertou o numero secreto que era ${numero} em ${tentativas} tentativas!`);
+</script>

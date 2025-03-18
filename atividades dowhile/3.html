@@ -1,0 +1,16 @@
+<script>
+let coelho = 0
+let ratos = 0
+let qnt = 1
+do {
+    let animal = parseInt(prompt(`Qual o animal para o teste N${qnt}`))
+    qnt++
+   if (animal == 1) {
+    coelho++
+   }else if (animal == 2) {
+    ratos++
+   }
+} while (qnt <= 15);
+alert(`Ficaram ${coelho} coelhos e ${ratos} ratos`)
+   
+</script>
