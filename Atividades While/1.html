@@ -2,10 +2,8 @@
     let numero = parseInt(prompt('Digite um número:'));
     let qnt = 0;
     let soma = 0;
-    while (numero > 0) {
-        let numeroInvertido = parseInt(numero.toString().split('').reverse().join(''));
-        soma += numeroInvertido;  
-        qnt++;
+    while (numero > 0) {     
+        qnt++;  //conta a quantidade de numeross
         numero = parseInt(prompt('Digite um número:'));
     }
     let soma1 = soma * 2;
