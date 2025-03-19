@@ -1,0 +1,25 @@
+<script>
+var N = parseInt(prompt("Diga um número até 100"))
+let qnt = 0;
+if (N%2 === 0){
+    alert("Não é primo")
+}else alert("primo")
+//------------------------------------------------------------------------------------------------------------- segunda parte
+
+let nbm = 1
+var primo = false
+for (let nbm = 2; nbm <= N; nbm++) {
+   let primo = true;
+   for (let o = 2; o < nbm; o++) {
+      if (nbm % o === 0) {
+         primo = false;
+      }
+   }
+   if (primo) {
+      alert(`O número ${nbm} é primo`);
+   } else {
+      alert(`O número ${nbm} não é primo`);
+   }
+}
+
+</script>

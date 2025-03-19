@@ -1,0 +1,19 @@
+<script>
+   let nbr = parseInt(prompt("Qual o número para montar a tabuada:"));
+   let inicio = parseInt(prompt("Valor inicial:"));
+   let fim = parseInt(prompt("Valor final:"));
+if (inicio > fim){
+   alert("Não pode")   
+}else {
+
+   alert("Sua tabela será montada");
+   let resultado = "";
+
+   for (let i = inicio; i <= fim; i++) {
+       resultado += `${nbr} X ${i} = ${nbr * i}\n`;
+   }
+
+   alert(resultado);
+}
+
+</script>
