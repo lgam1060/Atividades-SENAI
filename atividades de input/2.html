@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="icon" type="image/x-icon" href="1380338.png">
+    <style>
+        input[type=text], input[type=email], input[type=submit], input[type=password] textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #b8b8b8;
+  color: white; }
+  label{
+    color: #0e0e0e;
+  }
+
+ h1,form{ 
+    margin-left: 30px;
+    font-family: monospace;
+}body{
+    background-color: rgb(138, 164, 165);
+}h1{
+    background-color: azure;
+}
+textarea{
+    background-color: #b8b8b8 ;
+}
+    </style>
+</head>
+<body>
+    <h1>Manutenção de usuários do sistema intérno</h1>
+    <form action="" method="post">                                                        
+        <label for="nome">Login</label>         
+        <input type="text" name="Nome" id="login" placeholder="Insira seu Login">
+        <br><br> 
+    <form action="" method="post">                                                        
+        <label for="nome">Sua senha</label>         
+        <input type="password" name="password" id="password" placeholder="Senha">
+        <br><br>     
+        <label for="ativo">Informe seu status na empresa</label>
+        <select id="ativo">
+        <option>Ativo</option>
+        <option>Inativo</option>
+        </select>
+        <fieldset>                                                                      
+            <legend>Tipo</legend>
+             <input type="radio" name="profissao" id="mas" value="tec" />
+             <label for="mas">Têcnico</label>
+             <input type="radio" name="profissao" id="fem" value="prof" />
+             <label for="fem">Professor</label>
+             <input type="radio" name="profissao" id="out" value="alu" />
+             <label for="out">Aluno</label>          
+         </fieldset>
+         <br>
+         <label for="nome">Data de criação</label>         
+        <input type="date" name="Data" id="Data" placeholder="Data">
+        <br><br>
+        <label>Observações</label>
+        <textarea style="text-align: left; vertical-align: middle;"></textarea>         <!--tag para alinharr o text area no label em-->
+        <br><br>
+        <fieldset>                                                                      
+            <legend>Tipo</legend>
+             <input type="checkbox" name="modulo" id="com" value="com" />
+             <label for="mas">Compras</label>
+             <input type="checkbox" name="modulo" id="bli" value="bli" />
+             <label for="fem">Blibiotéca</label>
+             <input type="checkbox" name="modulo" id="aca" value="aca" />
+             <label for="out">Acadèmico</label>
+             <input type="checkbox" name=" modulo" id="docs" value="docs" />
+             <label for="out">Documentação</label>    
+             <input type="checkbox" name="modulo" id="huma" value="huma" />
+             <label for="out">Recursos Humanos</label>       
+         </fieldset>
+         <input type="submit" placeholder="submit">
+         <input type="reset" placeholder="submit">
+</body>
+</html>
