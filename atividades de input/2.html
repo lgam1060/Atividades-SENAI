@@ -33,11 +33,11 @@ textarea{
     <h1>Manutenção de usuários do sistema intérno</h1>
     <form action="" method="post">                                                        
         <label for="nome">Login</label>         
-        <input type="text" name="Nome" id="login" placeholder="Insira seu Login">
+        <input type="text" name="Nome" id="login" placeholder="Insira seu Login" required>
         <br><br> 
     <form action="" method="post">                                                        
         <label for="nome">Sua senha</label>         
-        <input type="password" name="password" id="password" placeholder="Senha">
+        <input type="password" name="password" id="password" placeholder="Senha" required>
         <br><br>     
         <label for="ativo">Informe seu status na empresa</label>
         <select id="ativo">
@@ -45,7 +45,7 @@ textarea{
         <option>Inativo</option>
         </select>
         <fieldset>                                                                      
-            <legend>Tipo</legend>
+            <legend>Tipo</legend required>
              <input type="radio" name="profissao" id="mas" value="tec" />
              <label for="mas">Têcnico</label>
              <input type="radio" name="profissao" id="fem" value="prof" />
