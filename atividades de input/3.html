@@ -8,7 +8,7 @@
     <style>
         fieldset {
   width: 380px;
-  height: 100px;
+  height: 120px;
   padding: 10px;
   border: 1px solid #ffffff;
   margin: 0;
@@ -21,13 +21,13 @@
             <legend>Dados pessoais</legend>
             <form action="" method="post">                                                           
                 <label for="nome">Nome</label>         
-                <input type="text" name="Nome" id="Nome" placeholder="Insira seu Nome">
-                <br>
+                <input type="text" name="Nome" id="Nome" placeholder="Insira seu Nome" required>
+             5   <br>
                 <label for="endereco">Endereço</label>         
-                <input type="text" name="Endereço" id="Endereço" placeholder="Insira seu Endereço">
+                <input type="text" name="Endereço" id="Endereço" placeholder="Insira seu Endereço" required>
                 <br>
                 <label for="cidade">Cidade</label>         
-                <input type="text" name="Cidade" id="cidade" placeholder="Insira sua cidade">
+                <input type="text" name="Cidade" id="cidade" placeholder="Insira sua cidade" required>
                 <br>
                 <label for="cidade">Informe sua cidade</label>
                 <select id="cidade">
@@ -35,7 +35,9 @@
                  <option>Rio de janeiro</option>
                  <option>Bahia</option>
                  <option>outro</option>
-                </select>
+                </select required>
+                <br>
+                <input type="submit" value="Enviar">
             </form>
         </fieldset>
         <br><br>
@@ -59,7 +61,7 @@
          <label for="5">Computação</label>
          <input type="checkbox" name="profissao" id="bio2" value="bio2"/>
          <label for="4">Biologia</label>
-         <input type="checkbox" name="profissao" id="bio" value="bio"/>
+         <input type="checkbox" name="profissao" id="bimyo" value="bio"/>
          <label for="3">Meio ambiente</label>          
          <input type="checkbox" name="profissao" id="eng" value="eng"/>
          <label for="2">Engenharia</label>  
@@ -68,8 +70,7 @@
          <label>Mini currículo</label>
         <textarea style="text-align: left; vertical-align: middle;"></textarea> 
         </fieldset>
-        <input type="submit" placeholder="submit">
-        <input type="reset" placeholder="submit">
+   
     </center>
    
 </body>
