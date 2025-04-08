@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+
+.conteiner{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border: 5px solid black;
+    justify-content: center;
+    height: 450px;
+}
+.caixa{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: 2px solid black;
+}
+.conteiner{
+    flex-direction: column; 
+    align-items: center; 
+}
+
+   

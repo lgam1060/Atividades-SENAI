@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+
+.conteiner{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border: 5px solid black;
+    justify-content: center;
+    height: 450px;
+}
+.caixa{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: 2px solid black;
+}
+.conteiner{
+    justify-content: space-between; 
+  
+}    
+.caixa:first-child {                      /*aprendi essa tag, pega o primeiro item de algo, nno caso a lista*/
+    align-self: flex-end;
+}
+    
+   

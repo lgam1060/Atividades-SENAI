@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+
+.conteiner {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border: 5px solid black;
+    justify-content: center;
+    height: 450px;
+    position: relative; /*outra gar nova que aprendi, para o primeiro item ficar no canto*/
+}
+.caixa{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.caixa:first-child {
+    position: absolute;         /*essa tag/propriieddade faz com que o primeiro item fique no canto*/
+    top: 0;
+    left: 0;
+}
+.caixa:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+.caixa:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+.caixa:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+.caixa:nth-child(5) {
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+                                       /*usando essas tags de posiçãoe child consigo mudar cada uma das caixas indivudualmente*/
+                                       /*para alinhar ao centro vi que precisa usar essa coisa: transform: translate(-50%, -50%);*/
+}
