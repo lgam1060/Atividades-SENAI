@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caixa{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.579);
+}
