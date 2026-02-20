@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema</title>
+</head>
+<body>
+
+    <h1>Senai </h1>
+
+    <!-- Data e relogio  -->
+    <p id="data"></p>
+
+
+    <h2 id="relogio"></h2>
+    <button onclick="pausarRelogio()">Pausar Relógio</button>
+
+    <hr>
+
+    <h3>Digite seu nome:</h3>
+
+    <input 
+        type="text" 
+        id="nomeInput" 
+        placeholder="Digite seu nome"
+        maxlength="15"
+        oninput="contarCaracteres()"
+    >
+
+    <p>Caracteres: <span id="contador">0</span>/15</p>
+
+    <br><br>
+
+    <button id="btnEnviar" onclick="mostrarNome()">Enviar</button>
+    <button onclick="limparNome()">Limpar</button>
+
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
